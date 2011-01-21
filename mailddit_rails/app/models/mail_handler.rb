@@ -4,14 +4,7 @@ class MailHandler
   end
   
   def send_mail
-    mail = Mail.new do
-         from 'smj2118@columbia.edu'
-           to 'samantha.m.john@gmail.com'
-          subject 'This is a test email'
-         body 'body'
-    end
-     mail.deliver!
-    
+    Pony.mail(:to => 'samantha.m.john@gmail.com', :from => 'smj2118@gmail.com', :subject => 'hi', :body => 'Hello there.')
   end
 
   def receive_mail
