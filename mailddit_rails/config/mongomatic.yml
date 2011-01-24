@@ -1,0 +1,3 @@
+development: Mongo::Connection.new.db("mailddit_development")
+test: Mongo::Connection.new.db("mailddit_test")
+production: Mongo::Connection.new.db("mailddit_production")
