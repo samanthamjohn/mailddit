@@ -31,3 +31,5 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 
 gem 'mail', :require => 'mail'
 gem 'pony', :require => 'pony'
+gem "axtro-rubber", :require => 'rubber'
+gem 'devise', :require => 'devise'

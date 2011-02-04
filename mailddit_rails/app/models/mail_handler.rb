@@ -32,7 +32,7 @@ class MailHandler
                                 :password            => MailAuth["password"],
                                 :enable_ssl          => true }
     end
-	mail = Mail.first
+	  mail = Mail.first
   end
   
   def parse_mail

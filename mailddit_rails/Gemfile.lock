@@ -28,11 +28,34 @@ GEM
       activemodel (= 3.0.0)
       activesupport (= 3.0.0)
     activesupport (3.0.0)
+    amazon-ec2 (0.9.17)
+      xml-simple (>= 1.0.12)
     arel (1.0.1)
       activesupport (~> 3.0.0)
+    aws-s3 (0.6.2)
+      builder
+      mime-types
+      xml-simple
+    axtro-rubber (1.5.7.1)
+      amazon-ec2 (>= 0.9.0)
+      aws-s3
+      capistrano (>= 2.4.0)
+      nettica
+    bcrypt-ruby (2.1.4)
     builder (2.1.2)
+    capistrano (2.5.19)
+      highline
+      net-scp (>= 1.0.0)
+      net-sftp (>= 2.0.0)
+      net-ssh (>= 2.0.14)
+      net-ssh-gateway (>= 1.0.0)
+    devise (1.1.5)
+      bcrypt-ruby (~> 2.1.2)
+      warden (~> 1.0.2)
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    highline (1.6.1)
+    httpclient (2.1.5.2)
     i18n (0.4.2)
     mail (2.2.9)
       activesupport (>= 2.3.6)
@@ -40,6 +63,17 @@ GEM
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
     mime-types (1.16)
+    mumboe-soap4r (1.5.8.3)
+      httpclient (>= 2.1.1)
+    net-scp (1.0.4)
+      net-ssh (>= 1.99.1)
+    net-sftp (2.0.5)
+      net-ssh (>= 2.0.9)
+    net-ssh (2.1.0)
+    net-ssh-gateway (1.0.1)
+      net-ssh (>= 1.99.1)
+    nettica (0.4.0)
+      mumboe-soap4r
     polyglot (0.3.1)
     pony (1.1)
       mail (> 2.0)
@@ -69,11 +103,16 @@ GEM
     treetop (1.4.8)
       polyglot (>= 0.3.1)
     tzinfo (0.3.23)
+    warden (1.0.3)
+      rack (>= 1.0.0)
+    xml-simple (1.0.14)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  axtro-rubber
+  devise
   mail
   pony
   rails (= 3.0.0)
